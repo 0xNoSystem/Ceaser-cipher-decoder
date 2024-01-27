@@ -1,0 +1,150 @@
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+#root{
+    height: 100vh;
+    background-color: #F5F5DC;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+
+}
+
+.app{
+    height: 100vh;
+    background-color: #F5F5DC;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004225;
+    height: 20%;
+    padding: 10px;
+}
+
+.header h1{
+    color: #F5F5DC;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 3%;
+    letter-spacing: 2px;
+}
+
+.header h2{
+    color: #FFCF9D;
+    font-size: 1rem;
+    align-self: flex-end;
+   text-align: center;
+    position: relative;
+    right: 2%;
+}
+
+#logo{
+    height: 100px;
+    width: 100px;
+    margin-right: 3%;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F5F5DC;
+    background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+    height: 100%;
+    padding: 100px
+}
+
+
+.explanation-h3{
+    font-size: 1.2rem;
+    color: #004225;
+    margin-top: 50px;
+    opacity: 0.6;
+    
+}
+
+
+.cypher-area{
+    position: relative;
+    width: 100%;
+    top: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+
+.cypher-area textarea{
+    width: 20%;
+    height: 150%;
+    padding: 2px;
+    padding-top: 5px;
+    padding-left: 5px;
+    border: 3px solid #FFB000;
+    resize: none;
+    margin-bottom: 100px;
+    font-size: 1rem;
+}
+
+.cypher-area textarea:focus{
+    outline: none;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.key-area{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: relative;
+    top: 40%;
+    
+}
+
+.key-area input{
+    margin-top: 50px;
+    font-size: 1.2rem;
+    text-align: center;
+    border:2px solid #004225;
+    border-radius: 3%
+}
+
+.key-area p{
+    color: #004225;
+    font-weight: bold;
+}
+
+.key-area button{
+    background-color: #004225;
+    color: #F5F5DC;
+    font-size: 1.2rem;
+    font-family: 'Times New Roman', Times, serif;
+    border-width: 3px;
+}
+
+
+textarea::-webkit-scrollbar{
+    width: 8px;
+
+}
+
+
+textarea::-webkit-scrollbar-thumb{
+    background-color: lightgray;
+    border-radius: 20%;
+}
+
+
+footer{
+    text-align: center;
+    padding: 10px;
+    background-color: #FFCF9D;
+    color: gray;
+}
