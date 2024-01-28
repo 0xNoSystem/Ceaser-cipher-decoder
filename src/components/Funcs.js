@@ -28,10 +28,10 @@ function cypher_encrypt(message, key){
         if (alphabet.includes(letter)){
             const letterIndex = alphabet.findIndex((l)=> l === letter);
             
-            if (letterIndex + key <= 29){
+            if (letterIndex + key < 28){
                 output += alphabet[letterIndex+key]
             }else{
-                output += alphabet[letterIndex + key - 29]
+                output += alphabet[letterIndex + key - 28]
             }
         }else if (digits.includes(letter)){
             const numberIndex = digits.findIndex((num)=> num === letter);
@@ -54,6 +54,7 @@ function cypher_encrypt(message, key){
 
 
 function cypher_decrypt(str, key){
+    str = str.toLowerCase();
     const alphabet = [
         'a', 'b', 'c', 'd', 'e', 'f',
         'g', 'h', 'i', 'j', 'k', 'l',
