@@ -10,7 +10,7 @@ function cypher_encrypt(message, key){
         'g', 'h', 'i', 'j', 'k', 'l',
         'm', 'n', 'o', 'p', 'q', 'r',
         's', 't', 'u', 'v', 'w', 'x',
-        'y', 'z',' ','.',',',':'
+        'y', 'z', ' ', '.', ',' ,':'
       ];
     
     const digits = [
@@ -28,7 +28,7 @@ function cypher_encrypt(message, key){
         if (alphabet.includes(letter)){
             const letterIndex = alphabet.findIndex((l)=> l === letter);
             
-            if (letterIndex + key < 28){
+            if (letterIndex + key <= 28){
                 output += alphabet[letterIndex+key]
             }else{
                 output += alphabet[letterIndex + key - 28]
@@ -81,12 +81,12 @@ function cypher_decrypt(str, key){
             if (letterIndex - key >= 0){
                 output += alphabet[letterIndex-key]
             }else{
-                output += alphabet[letterIndex - key + 29]
+                output += alphabet[letterIndex - key + 28]
             }
         }else if (digits.includes(letter)){
             const numberIndex = digits.findIndex((num)=> num === letter);
             if (numberIndex + key > 0){
-                output += digits[numberIndex+key]
+                output += digits[numberIndex-key]
             }else{
                 while (numberIndex-key < 0){
                 key = key + 9}

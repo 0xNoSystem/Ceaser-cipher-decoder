@@ -1,7 +1,9 @@
+
 body{
     height: 100vh;
     margin: 0;
     padding: 0;
+    
 }
 
 #root{
@@ -25,6 +27,7 @@ body{
     background-color: #004225;
     height: 20%;
     padding: 10px;
+    width: 100%;
 }
 
 .header h1{
@@ -237,7 +240,7 @@ toggle-button-cover {
   
   .layer {
     width: 100%;
-    background-color: #ebf7fc;
+    background-color: #b7c8cf;
     transition: 0.3s ease all;
     z-index: 1;
   }
@@ -256,7 +259,7 @@ toggle-button-cover {
     text-align: center;
     line-height: 1;
     padding: 9px 4px;
-    background-color: #07f403;
+    background-color: #85d307;
     border-radius: 50%;
     transition: 0.3s cubic-bezier(0.18, 0.89, 0.35, 1.15) all;
   }
@@ -279,7 +282,7 @@ toggle-button-cover {
   
 
 
-  @media(max-width:1000px){
+  @media(max-width:800px){
 
     .header{
       height: 10%;

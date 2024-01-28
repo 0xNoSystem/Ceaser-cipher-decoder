@@ -43,8 +43,14 @@ function App(){
     }
 
     function updateMode(event){
-        const isChecked = event.target.checked;
+        
+        ()=>{
+            setInput("");
+            setOutput("")
+        }
 
+        const isChecked = event.target.checked;
+        
         if (!isChecked){
             setMode("Encrypt")
         }else{
