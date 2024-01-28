@@ -43,11 +43,9 @@ function App(){
     }
 
     function updateMode(event){
-        
-        ()=>{
-            setInput("");
-            setOutput("")
-        }
+
+        setInput("");
+        setOutput("")
 
         const isChecked = event.target.checked;
         
